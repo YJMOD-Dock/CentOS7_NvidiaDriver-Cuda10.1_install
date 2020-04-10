@@ -1,6 +1,13 @@
 sub_dist=$(cat /etc/redhat-release)
 arch=$(uname -m)
 
+if [ ${sub_dist:0:6}${sub_dist:21:1} = CentOS7 ];then
+	dist="rhel7"
+	echo "Version : ${sub_dist:0:22}"
+else
+	echo "check your OS"
+fi
+
 sudo sed 's/quiet"/quiet rd.driver.blacklist=nouveau nouveau.modeset=0"/' /etc/default/grub
 echo "blacklist nouveau">/etc/modprobe.d/blacklist-nouveau.conf
 echo "options nouveau modeset=0">>/etc/modprobe.d/blacklist-nouveau.conf
