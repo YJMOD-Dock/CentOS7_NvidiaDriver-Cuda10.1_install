@@ -6,11 +6,8 @@ arch=$(uname -m)
 if [ ${sub_dist:0:6}${sub_dist:21:1} = CentOS7 ];then
 	dist="rhel7"
 	echo "Version : ${sub_dist:0:22}"
-elif [ ${sub_dist:0:6}${sub_dist:21:1} = CentOS8 ];then
-	dist="rhel8"
-	echo "Version : ${sub_dist:0:22}"
 else
-	echo "we support CentOS 7,8"
+	echo "check your OS"
 fi
 
 wget https://developer.download.nvidia.com/compute/cuda/repos/$dist/$arch/cuda-repo-$dist-10.1.105-1.$arch.rpm
