@@ -1,6 +1,6 @@
 # CentOS7_NvidiaDriver-Cuda10.1_install
 ## 필요 환경
-CUDA가 지원되는 Nvidia 그래픽 카드\
+[CUDA가 지원되는 Nvidia 그래픽 카드](https://developer.nvidia.com/cuda-gpus)\
 CentOS7 64bit
 
 ## 설치되는 항목
