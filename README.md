@@ -22,7 +22,7 @@ sudo bash Nvidia_Driver_install_2.sh
 ~~~
 4. 마지막 shell script를 실행한다.
 ~~~
-sudo ba Nvidia_Driver_install_3.sh
+sudo bash Nvidia_Driver_install_3.sh
 ~~~
 
 ## 주의사항
